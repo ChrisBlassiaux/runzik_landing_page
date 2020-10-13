@@ -69,7 +69,7 @@ body {
 
 /* btn */
 .btn {
-  margin-top: 50px; 
+  margin-top: 20px; 
   padding: 10px 0;
 
   display: inline-block;
@@ -129,10 +129,16 @@ body {
 
   display: inline-block;
   width: 100%;
+
+  transition: .3s;
 }
 
 .nav a.active {
   font-weight: 900;
+}
+
+.nav a:hover {
+  color:  #ffe600;
 }
 
 .nav a.mark {
