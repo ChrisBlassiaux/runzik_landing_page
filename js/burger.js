@@ -10,21 +10,21 @@ let filterNav = document.querySelector('.filter-nav');
 burger.addEventListener('click', function () {
   if (nav.style.display == 'none') {
     nav.style.display = 'block';
-    navbar.classList.add('fixed');
     filterNav.style.display = 'block';
+    burger.style.color = '#FFF';
   } else {
     nav.style.display = 'none';
-    navbar.classList.remove('fixed');
     filterNav.style.display = 'none';
+    burger.style.color = 'rgb(20, 20, 20)';
   }
 });
 
 window.addEventListener('resize', function () {
-  if (window.innerWidth >= 850) {
+  if (window.innerWidth >= 950) {
     nav.style.display = 'block';
   }
 
-  if (window.innerWidth <= 850) {
+  if (window.innerWidth <= 950) {
     nav.style.display = 'none';
   }
 })
