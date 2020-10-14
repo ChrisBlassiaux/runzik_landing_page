@@ -22,6 +22,7 @@ burger.addEventListener('click', function () {
 window.addEventListener('resize', function () {
   if (window.innerWidth >= 950) {
     nav.style.display = 'block';
+    filterNav.style.display = 'none';
   }
 
   if (window.innerWidth <= 950) {
